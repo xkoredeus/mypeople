@@ -1,0 +1,68 @@
+input {
+  border: none;
+  outline: none;
+  box-shadow: unset;
+  background: none;
+  &:hover {
+    cursor: text;
+  }
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 0;
+
+  input {
+    padding: 23px 30px;
+    border: 1px solid $gray;
+    width: 100%;
+    letter-spacing: 0.02em;
+
+    @include r($breakpoint-1) {
+      padding: 20px 28px;
+    }
+
+    &::placeholder {
+      color: #B8B8B8;
+    }
+
+    &:focus {
+      border-color: $purple;
+    }
+  }
+
+  &--icon {
+    position: relative;
+
+    svg {
+      position: absolute;
+      left: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      fill: $black;
+      width: 20px;
+      height: 17px;
+
+      @include r($breakpoint-1) {
+        left: 21px;
+      }
+    }
+
+    input {
+      padding-left: 69px;
+
+      @include r($breakpoint-1) {
+        padding-left: 51px;
+      }
+    }
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

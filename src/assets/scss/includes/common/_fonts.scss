@@ -1,0 +1,19 @@
+$font-Thin: 'Circe-Thin';
+$font-Light: 'Circe-Light';
+$font-Regular: 'Circe-Regular';
+$font-Bold: 'Circe-Bold';
+$font-ExtraBold: 'Circe-ExtraBold';
+
+@mixin font-Thin { font-family: $font-Thin; }
+@mixin font-Light { font-family: $font-Light; }
+@mixin font-Regular { font-family: $font-Regular; }
+@mixin font-Bold { font-family: $font-Bold; }
+@mixin font-ExtraBold { font-family: $font-ExtraBold; }
+
+.font-Thin { @include font-Thin; }
+.font-Light { @include font-Light; }
+.font-Regular { @include font-Regular; }
+.font-Bold { @include font-Bold; }
+.font-ExtraBold { @include font-ExtraBold; }
+
+

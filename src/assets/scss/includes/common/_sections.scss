@@ -1,0 +1,10 @@
+@mixin section-pd-1 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  @include r($breakpoint-1) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+.section-pd-1 { @include section-pd-1; }

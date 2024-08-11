@@ -1,0 +1,41 @@
+button {
+  border: none;
+  outline: none;
+  box-shadow: unset;
+  background: none;
+  padding: 0;
+}
+
+.button,
+a.button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  @include text2;
+  padding: 24px 60px;
+  @include ease-long;
+  color: $purple;
+  border: 1px solid $dark;
+  letter-spacing: 0.02em;
+
+  @include r($breakpoint-1) {
+    font-size: 16px;
+    padding: 20px 31px;
+  }
+
+  &:hover {
+    color: $white;
+    border-color: $black;
+    background-color: $black;
+  }
+}
+
+.link-underline {
+  color: currentColor;
+  border-bottom: 1px solid currentColor;
+
+  &:hover {
+    color: $purple;
+    border-bottom-color: $purple;
+  }
+}

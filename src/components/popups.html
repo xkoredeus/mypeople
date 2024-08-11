@@ -1,0 +1,24 @@
+<div id="popup-call" class="popup__wrapper popup__wrapper-small" style="display: none">
+    <div class="popup__in">
+        <div class="popup-header">
+            <div class="popup-title">Введите данные:</div>
+        </div>
+
+        <div class="popup-content">
+            <div class="popup__fields">
+                <label class="form-field w-100">
+                    <input type="text" class="form-input" placeholder="Ваше имя">
+                </label>
+                <label class="form-field w-100">
+                    <input type="tel" class="form-input js-tel" placeholder="Ваш телефон">
+                </label>
+            </div>
+
+            {{> policy }}
+
+            <button class="button w-100"><span>Отправить запрос</span></button>
+        </div>
+
+    </div>
+</div>
+
